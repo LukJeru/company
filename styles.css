@@ -38,6 +38,25 @@ body {
 
 .container{
   position: relative;
-  top: 60px;
+  top: 800px;
 }
 
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43rem;
+  background-image: url("../images/Teppichbanner.jpeg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  top: 3rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  font-family: "Major Mono Display";
+  color: var(--white);
+}
