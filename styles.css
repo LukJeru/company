@@ -111,3 +111,13 @@ header{
   filter:grayscale(0%);
   cursor: pointer;
 }
+
+@media screen and (max-width: 520px ) {
+  .nav li{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .carpets{
+    padding: 2rem;
+  }
+}
