@@ -43,8 +43,6 @@ header{
 }
 
 
-
-
 :root {
   --blue: #00158c;
   --yellow: #d6c627;
@@ -112,12 +110,38 @@ header{
   cursor: pointer;
 }
 
+#teammates {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#teammates .teammate{
+  width: 150px;
+  height: 200px;
+  filter:grayscale(55%);
+  padding: 4rem;
+}
+
+#teammates .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 2px;
+}
+
+.card h4{
+  font-family: "Major Mono Display";
+}
+
 @media screen and (max-width: 520px ) {
   .nav li{
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .carpets{
+    padding: 2rem;
+  }
+  .teammate {
     padding: 2rem;
   }
 }
