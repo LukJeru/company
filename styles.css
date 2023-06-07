@@ -133,6 +133,15 @@ header{
   font-family: "Major Mono Display";
 }
 
+footer {
+  display: inline-flex;
+  background-color: var(--yellow);
+  justify-content: space-between;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
 @media screen and (max-width: 520px ) {
   .nav li{
     padding-left: 1rem;
