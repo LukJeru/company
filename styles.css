@@ -1,15 +1,25 @@
 body {
   font-size: 16px;
+  font-family: "Montserrat";
+}
+
+header{
+  width: 100%;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--red);
+  background-color: var(--blue);
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index: 1;
+}
+
+.nav #logo{
+  padding-left: 1rem;
 }
 
 .nav ul{
@@ -27,6 +37,13 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+.nav a:hover{
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+
+
 
 :root {
   --blue: #00158c;
@@ -37,8 +54,8 @@ body {
 }
 
 .container{
-  position: relative;
-  top: 800px;
+  width: 100%;
+  padding: 3rem;
 }
 
 .banner {
@@ -59,4 +76,38 @@ body {
   font-size: 3rem;
   font-family: "Major Mono Display";
   color: var(--white);
+}
+
+#mission{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#mission .heading {
+  display: inline-flex;
+  flex: 1;
+  width: 100%;
+  padding: 4rem;
+  padding-right: 6rem;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: var(--red);
+}
+
+#mission p{
+  padding: 4rem;
+  line-height: 1.2rem;
+}
+
+.carpets{
+  width: 150px;
+  height: 200px;
+  filter:grayscale(55%);
+  padding: 4rem;
+}
+
+.carpets:hover{
+  filter:grayscale(0%);
+  cursor: pointer;
 }
